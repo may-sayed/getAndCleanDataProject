@@ -4,12 +4,13 @@
 This file explains the objective and steps for the getting and cleaning data project
 
 The project have five requirements:
+```
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive variable names. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-
+```
 The steps for the above objective is implemented in the file run_analysis.R
 Download the file into a project directory then set the working directory on your Rstudio to that folder and run the file, if for some reason of security or otherwise the file can't download the dataset, download it manually into the project directory and just comment the first step
 
