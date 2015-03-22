@@ -57,20 +57,20 @@ str(meanAndStdDevData) #should be same number of observation as allData but with
 #8.Reading names of activity from file and replacing each activity id with its name(Requirement 3)
 activitynames<-read.table("./UCI HAR Dataset/activity_labels.txt")
 #Replacting the activity number by its name
-allData<-mutate(allData,Activity=activitynames[Activity,2])
+meanAndStdDevData<-mutate(meanAndStdDevData,Activity=activitynames[Activity,2])
 
 #9. Renaming column names with descriptive names (Requirment 4)
 # Replacing Acc with Accelerometer
 # Replacing Gyro with Gyroscope 
 # Replcaing Mag with Magnitude
 # Replcaing fBody with FFTFrequencyBody
-names(allData)<-gsub("Acc","Accelerometer",names(allData))
-names(allData)<-gsub("Gyro","Gyroscope",names(allData))
-names(allData)<-gsub("Mag","Magnitude",names(allData))
-names(allData)<-gsub("fBody","FFTFrequency",names(allData))
+names(meanAndStdDevData)<-gsub("Acc","Accelerometer",names(meanAndStdDevData))
+names(meanAndStdDevData)<-gsub("Gyro","Gyroscope",names(meanAndStdDevData))
+names(meanAndStdDevData)<-gsub("Mag","Magnitude",names(meanAndStdDevData))
+names(meanAndStdDevData)<-gsub("fBody","FFTFrequency",names(meanAndStdDevData))
 
 #10. Creating tidy data by grouping with Subject Name and Activity and getting mean of each variable for that grouping(Requirement 5)
-groupSubjectAndActivity<-group_by(allData,SubjectID,Activity)
+groupSubjectAndActivity<-group_by(meanAndStdDevData,SubjectID,Activity)
 tidyData<-summarise_each(groupSubjectAndActivity,funs(mean))
 #Viewing tidy data
 View(tidyData)
