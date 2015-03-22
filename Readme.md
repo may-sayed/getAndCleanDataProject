@@ -15,6 +15,7 @@ The steps for the above objective is implemented in the file run_analysis.R
 Download the file into a project directory then set the working directory on your Rstudio to that folder and run the file, if for some reason of security or otherwise the file can't download the dataset, download it manually into the project directory and just comment the first step
 
 The file implements the following steps 
+```
 1.downloading data file to workspace directory
 2.unzip dataset to workspace directory
 3.reading training data and test data and merging them into one data set
@@ -25,7 +26,7 @@ The file implements the following steps
 8. Renaming column names with descriptive names 
 9. Creating tidy data by grouping with Subject Name and Activity and getting mean of each variable for that grouping
 10. Writing tidy data to file
-
+```
 The repository also contains the tidyData.csv and tidyData.txt which is the output of the analysis steps as well as a Codebook for the data variables
 
 
