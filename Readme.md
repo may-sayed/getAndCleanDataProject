@@ -25,6 +25,6 @@ The file implements the following steps
 9. Creating tidy data by grouping with Subject Name and Activity and getting mean of each variable for that grouping
 10. Writing tidy data to file
 
-The repository also contains the tidydata.csv and tidydata.txt which is the output of the analysis steps as well as a Codebook for the data variables
+The repository also contains the tidyData.csv and tidyData.txt which is the output of the analysis steps as well as a Codebook for the data variables
 
 
