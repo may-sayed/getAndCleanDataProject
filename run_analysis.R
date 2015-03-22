@@ -75,4 +75,4 @@ tidyData<-summarise_each(groupSubjectAndActivity,funs(mean))
 #Viewing tidy data
 View(tidyData)
 #writing tidy data to file
-write.csv(tidyData,"./tidyData.csv")
+write.table(tidyData,"./tidyData.txt",row.name=FALSE )
