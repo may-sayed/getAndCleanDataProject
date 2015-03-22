@@ -1,9 +1,9 @@
 #This script contains the steps to preform the requirements for Course projects
 #1.downloading data file to workspace directory
-#download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",destfile="./dataset.zip",method="curl")
+download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",destfile="./dataset.zip",method="curl")
 
 #2.unzip dataset to workspace directory
-#unzip("./dataset.zip")
+unzip("./dataset.zip")
 
 #3.reading training data and test data 
 #Reading the train data, the observation labels (activity label) and the id for the subject based on Readme file explanation of files
