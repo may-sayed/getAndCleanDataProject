@@ -11,7 +11,7 @@ The project have five requirements:
 5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 The steps for the above objective is implemented in the file run_analysis.R
-Download the file into a project directory and download the dataset https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip  into the same directory then set the working directory on your Rstudio to that folder and run the file
+Download the file into a project directory then set the working directory on your Rstudio to that folder and run the file, if for some reason of security or otherwise the file can't download the dataset, download it manually into the project directory and just comment the first step
 
 The file implements the following steps 
 1.downloading data file to workspace directory
